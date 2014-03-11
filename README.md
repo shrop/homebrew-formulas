@@ -1,4 +1,4 @@
-## Shrop's custom homebrew forumlae
+## Shrop's custom homebrew forumlas
 
 ### Instuctions
 Tap this repo into an existing homebrew install  
