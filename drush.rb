@@ -1,6 +1,6 @@
 require 'formula'
 
-class Drush7 < Formula
+class Drush < Formula
   homepage 'https://github.com/drush-ops/drush'
   head 'https://github.com/drush-ops/drush.git'
   url 'https://github.com/drush-ops/drush/archive/master.zip'
