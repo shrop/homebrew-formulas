@@ -1,10 +1,10 @@
 require 'formula'
 
-class Drush < Formula
+class Drush7 < Formula
   homepage 'https://github.com/drush-ops/drush'
   head 'https://github.com/drush-ops/drush.git'
-  url 'https://github.com/drush-ops/drush/archive/6.2.0.tar.gz'
-  sha1 '7e13d5264f362ec09efbe8218e13dcd646ba75b3'
+  url 'https://github.com/drush-ops/drush/archive/master.zip'
+  sha1 ''
 
   def install
     prefix.install_metafiles
