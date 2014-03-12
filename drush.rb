@@ -2,10 +2,9 @@ require 'formula'
 
 class Drush < Formula
   homepage 'https://github.com/drush-ops/drush'
-  head 'https://github.com/drush-ops/drush.git'
-  url 'https://github.com/drush-ops/drush/archive/master.zip'
-  sha1 ''
-
+  head 'https://github.com/shrop/drush.git'
+  url 'https://github.com/shrop/drush/archive/dev-20130312.tar.gz'
+  
   def install
     prefix.install_metafiles
     libexec.install Dir['*'] -['drush.bat']
@@ -16,7 +15,7 @@ class Drush < Formula
       export SHARE_PREFIX=${SHARE_PREFIX:=#{HOMEBREW_PREFIX}}
 
       exec "#{libexec}/drush" "$@"
-    EOS
+    EOSsubl 
     bash_completion.install libexec/'drush.complete.sh' => 'drush'
   end
 end
