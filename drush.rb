@@ -15,7 +15,7 @@ class Drush < Formula
       export SHARE_PREFIX=${SHARE_PREFIX:=#{HOMEBREW_PREFIX}}
 
       exec "#{libexec}/drush" "$@"
-    EOSsubl 
+    EOS
     bash_completion.install libexec/'drush.complete.sh' => 'drush'
   end
 end
